@@ -1,0 +1,11 @@
+# Make sure to exclude unused dirs or it'll run 10,000+ files in circleci
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "bin/**/*"
+    - "log/**/*"
+    - "spec/**/*"
+    - "features/**/*"
+    - "Gemfile"
