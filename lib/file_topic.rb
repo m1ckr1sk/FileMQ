@@ -9,12 +9,10 @@ class FileTopic
   end
 
   def publish(message)
-    message_name = SecureRandom.hex(20).to_s + '.msg'
+    message_file = FileMessage.new SecureRandom.hex(20).to_s + '.msg'
     Dir.glob(@topic_location + '/*').select do |queue_location|
       next unless File.directory? queue_location
-      File.open(queue_location + '/' + message_name, 'w') do |file|
-        file.puts message
-      end
+      message_file.write_message(queue_location, message)
     end
   end
 end

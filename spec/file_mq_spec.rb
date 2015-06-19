@@ -39,4 +39,17 @@ describe 'FileMQ' do
     #assert
     expect(channel).to_not be_nil
   end
+  
+  it 'should clear down its message store on close' do
+      #arrange
+      file_location = './file_mq_store'
+      FileUtils.rm_rf(file_location)
+      file_mq = FileMQ.new file_location
+  
+      #act
+      file_mq.close
+  
+      #assert
+      expect(File).to_not exist(file_location)
+    end
 end

@@ -11,4 +11,8 @@ class FileMQ
   def create_channel
     FileChannel.new(@root_folder)
   end
+
+  def close
+    FileUtils.rm_rf(@root_folder)
+  end
 end
