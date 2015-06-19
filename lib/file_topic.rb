@@ -1,4 +1,5 @@
 require 'fileutils'
+require_relative 'file_message'
 
 # FileTopic - a topic to post messages to that queues can listen to
 class FileTopic
