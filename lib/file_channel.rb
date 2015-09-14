@@ -17,6 +17,9 @@ class FileChannel
   def topic(topic_name)
     @topics[topic_name] = FileTopic.new(@channel_location, topic_name)
   end
+  
+  
+  #BREAK ME NOW!!!!
 
   def queue
     FileQueue.new
