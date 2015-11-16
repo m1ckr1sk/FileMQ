@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem "rake"
 
 group :test, :cucumber do
   gem "cucumber"
