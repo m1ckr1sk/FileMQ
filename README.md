@@ -1,5 +1,6 @@
 # FileMQ
 [![Circle CI](https://circleci.com/gh/m1ckr1sk/FileMQ.svg?style=svg)](https://circleci.com/gh/m1ckr1sk/FileMQ)
+[![Gem Version](https://badge.fury.io/rb/file_mq.svg)](https://badge.fury.io/rb/file_mq)
 
 File based messaging library written in Ruby. The system is intended to be  simple development substitute that could be swapped in in place of a more robust messaging system
 
