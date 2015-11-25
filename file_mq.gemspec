@@ -8,7 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = FileMQ::VERSION
   spec.authors       = ['Mike Butt']
   spec.email         = ['mjbutt@hotmail.co.uk']
-  spec.summary       = 'A message queue library based on RabbitMQ that stores messages on file system'
+  spec.summary       = 'A message queue library based on RabbitMQ that stores '
+  spec.summary	     += 'messages on file system'
   spec.homepage      = 'https://github.com/m1ckr1sk/FileMQ'
   spec.license       = 'MIT'
 
